@@ -1,4 +1,3 @@
-import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
@@ -10,7 +9,6 @@ import CompletedTaskChart from './CompletedTaskChart';
 const CompletedTask = () => {
   return (
     <Paper sx={{ height: 300 }}>
-      {/* header */}
       <Stack alignItems="center" spacing={0.6}>
         <IconifyIcon icon="ph:clock-fill" color="text.secondary" fontSize="h6.fontSize" />
         <Typography variant="body2" color="text.secondary">
@@ -25,14 +23,10 @@ const CompletedTask = () => {
           </Typography>
           <RateChip rate={'16.8%'} isUp={true} />
         </Stack>
-
         <DateSelect />
       </Stack>
 
-      {/* line chart */}
-      <Box height={220}>
-        <CompletedTaskChart sx={{ height: '100% !important' }} />
-      </Box>
+      <CompletedTaskChart sx={{ height: '220px !important' }} />
     </Paper>
   );
 };

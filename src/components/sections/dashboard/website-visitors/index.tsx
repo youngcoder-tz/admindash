@@ -14,7 +14,6 @@ const WebsiteVisitors = () => {
 
   return (
     <Paper sx={{ height: 500 }}>
-      {/* header */}
       <Stack alignItems="center" justifyContent="space-between" mb={-2}>
         <Typography variant="h6" fontWeight={400} fontFamily={fontFamily.workSans}>
           Website Visitors
@@ -30,10 +29,7 @@ const WebsiteVisitors = () => {
         </Button>
       </Stack>
 
-      {/* polar bar chart */}
       <VisitorsChart chartRef={chartRef} />
-
-      {/* legends */}
       <VisitorsChartLegends chartRef={chartRef} />
     </Paper>
   );

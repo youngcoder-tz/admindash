@@ -32,12 +32,10 @@ const RevenueByCustomer = () => {
 
   return (
     <Paper sx={{ height: { xs: 540, md: 500 } }}>
-      {/* header */}
       <Typography variant="subtitle1" color="text.secondary">
         Revenue by customer type
       </Typography>
 
-      {/* subheader */}
       <Stack justifyContent="space-between" mt={1}>
         <Stack alignItems="center" gap={0.875}>
           <Typography variant="h3" fontWeight={600} letterSpacing={1}>
@@ -60,10 +58,7 @@ const RevenueByCustomer = () => {
         <RevenueChartLegends chartRef={chartRef} sm={true} />
       </Box>
 
-      {/* stacked bar chart */}
-      <Box height={400}>
-        <RevenueChart chartRef={chartRef} data={revenueData} sx={{ minHeight: 1 }} />
-      </Box>
+      <RevenueChart chartRef={chartRef} data={revenueData} sx={{ height: '400px !important' }} />
     </Paper>
   );
 };
