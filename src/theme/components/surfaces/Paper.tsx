@@ -10,7 +10,7 @@ const Paper: Components<Omit<Theme, 'components'>>['MuiPaper'] = {
       borderRadius: theme.shape.borderRadius * 3,
 
       '&.MuiMenu-paper': {
-        padding: theme.spacing(1),
+        padding: theme.spacing(0),
       },
     }),
   },

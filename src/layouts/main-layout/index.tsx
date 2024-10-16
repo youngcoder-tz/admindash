@@ -9,7 +9,7 @@ const MainLayout = ({ children }: PropsWithChildren) => {
   const [isClosing, setIsClosing] = useState(false);
 
   return (
-    <Stack width={1} minHeight={'100vh'}>
+    <Stack width={1} minHeight="100vh">
       <Sidebar mobileOpen={mobileOpen} setMobileOpen={setMobileOpen} setIsClosing={setIsClosing} />
       <Stack
         component="main"

@@ -93,18 +93,14 @@ const ProfileMenu = () => {
         open={open}
         onClose={handleProfileMenuClose}
         onClick={handleProfileMenuClose}
-        PaperProps={{
-          elevation: 0,
-          sx: {
-            mt: 1.5,
-            p: '0 !important',
+        sx={{
+          mt: 1.5,
+          '& .MuiList-root': {
             width: 240,
-            overflow: 'hidden',
             '& .MuiAvatar-root': {
-              width: 34,
-              height: 34,
-              ml: -0.5,
-              mr: 1,
+              width: 36,
+              height: 36,
+              mr: 1.25,
             },
           },
         }}
