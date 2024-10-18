@@ -2,12 +2,12 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import List from '@mui/material/List';
 import Stack from '@mui/material/Stack';
-import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
 import ButtonBase from '@mui/material/ButtonBase';
-import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+import Divider from '@mui/material/Divider';
 import Image from 'components/base/Image';
 import IconifyIcon from 'components/base/IconifyIcon';
 import CollapseListItem from './list-items/CollapseListItem';
@@ -74,7 +74,7 @@ const DrawerItems = () => {
         {profileListData && <ProfileListItem {...profileListData} />}
       </List>
 
-      <Box px={3.5} py={6} width={1}>
+      <Box px={3.5} pt={6} pb={12} width={1}>
         <Button
           variant="contained"
           color="primary"
