@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
-import DateSelect from 'components/dates/DateSelect';
 import IconifyIcon from 'components/base/IconifyIcon';
 import OrdersStatusTable from './OrdersStatusTable';
 
@@ -20,51 +19,51 @@ const OrdersStatus = () => {
 
   return (
     <Paper sx={{ px: 0 }}>
-      <Stack
-        px={3.5}
-        spacing={1.5}
-        alignItems={{ xs: 'flex-start', md: 'center' }}
-        justifyContent="space-between"
-      >
-        <Stack
-          spacing={2}
-          direction={{ xs: 'column', md: 'row' }}
-          alignItems={{ xs: 'flex-start', md: 'center' }}
-          justifyContent="space-between"
-          flexGrow={1}
-        >
-          <Typography variant="h6" fontWeight={400} fontFamily={fontFamily.workSans}>
-            Orders Status
-          </Typography>
+      <Stack px={3.5} spacing={1.5} alignItems="center" justifyContent="space-between">
+        <Typography variant="h6" fontWeight={400} fontFamily={fontFamily.workSans}>
+          Orders Status
+        </Typography>
+        <Stack spacing={2} alignItems="center">
           <TextField
             variant="filled"
             size="small"
             placeholder="Search for..."
             value={searchText}
             onChange={handleInputChange}
-            sx={{ width: 220 }}
+            sx={{ width: 220, display: {xs: 'none', sm: 'flex'} }}
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <IconifyIcon icon={'mingcute:search-line'} />
+                  <IconifyIcon icon='mingcute:search-line' />
                 </InputAdornment>
               ),
             }}
           />
-        </Stack>
-        <Stack
-          spacing={1.5}
-          direction={{ xs: 'column-reverse', sm: 'row' }}
-          alignItems={{ xs: 'flex-end', sm: 'center' }}
-        >
-          <DateSelect />
           <Button variant="contained" size="small">
             Create order
           </Button>
         </Stack>
       </Stack>
 
-      <Box mt={1.5} sx={{ height: 594, width: 1 }}>
+      <Stack my={2} px={3.5} width={1} justifyContent="center">
+        <TextField
+          variant="filled"
+          size="small"
+          placeholder="Search for..."
+          value={searchText}
+          onChange={handleInputChange}
+          sx={{ width: 1, display: {xs: 'flex', sm: 'none'} }}
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <IconifyIcon icon={'mingcute:search-line'} />
+              </InputAdornment>
+            ),
+          }}
+        />
+      </Stack>
+
+      <Box mt={1.5} sx={{ height: 594, width: 1, flexShrink: 0 }}>
         <OrdersStatusTable searchText={searchText} />
       </Box>
     </Paper>

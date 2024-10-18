@@ -26,9 +26,10 @@ const DataGrid: Components<Omit<Theme, 'components'>>['MuiDataGrid'] = {
     }),
     virtualScroller: {
       overflowY: 'hidden',
-    },
+    }, 
     columnHeaders: ({ theme }) => ({
       padding: theme.spacing(0, 2),
+      '--DataGrid-containerBackground': 'transparent',
     }),
     columnHeader: ({ theme }) => ({
       background: theme.palette.info.main,
