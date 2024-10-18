@@ -37,9 +37,9 @@ const Login = () => {
       <Stack direction={{ xs: 'column', sm: 'row' }} mt={4} spacing={2} width={1}>
         <Button
           variant="contained"
-          color="primary"
+          color="secondary"
           fullWidth
-          startIcon={<IconifyIcon icon="uim:google" />}
+          startIcon={<IconifyIcon icon="logos:google-icon" />}
         >
           Login with Google
         </Button>
@@ -47,7 +47,7 @@ const Login = () => {
           variant="contained"
           color="secondary"
           fullWidth
-          startIcon={<IconifyIcon icon="uim:apple" />}
+          startIcon={<IconifyIcon icon="uim:apple" sx={{ mb: 0.35 }} />}
         >
           Login with Apple
         </Button>
@@ -77,7 +77,6 @@ const Login = () => {
           placeholder="Your Password"
           autoComplete="current-password"
           fullWidth
-          autoFocus
           required
           InputProps={{
             endAdornment: (

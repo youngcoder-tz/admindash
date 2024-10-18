@@ -19,7 +19,7 @@ const AuthLayout = ({ children }: PropsWithChildren) => {
         </ButtonBase>
       </Stack>
       <Stack my="auto" py={5} alignItems="center" justifyContent="center">
-        <Paper sx={{ py: 4, width: 1, maxWidth: 460 }}>{children}</Paper>
+        <Paper sx={{ py: 4, width: 1, maxWidth: 450 }}>{children}</Paper>
       </Stack>
     </Stack>
   );

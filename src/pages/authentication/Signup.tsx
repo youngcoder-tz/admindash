@@ -35,9 +35,9 @@ const Signup = () => {
       <Stack direction={{ xs: 'column', sm: 'row' }} mt={4} spacing={2} width={1}>
         <Button
           variant="contained"
-          color="primary"
+          color="secondary"
           fullWidth
-          startIcon={<IconifyIcon icon="uim:google" />}
+          startIcon={<IconifyIcon icon="logos:google-icon" />}
         >
           Signup with Google
         </Button>
@@ -45,7 +45,7 @@ const Signup = () => {
           variant="contained"
           color="secondary"
           fullWidth
-          startIcon={<IconifyIcon icon="uim:apple" />}
+          startIcon={<IconifyIcon icon="uim:apple" sx={{ mb: 0.35 }} />}
         >
           Signup with Apple
         </Button>
@@ -75,7 +75,6 @@ const Signup = () => {
           placeholder="Your Email"
           autoComplete="email"
           fullWidth
-          autoFocus
           required
         />
         <TextField
@@ -88,7 +87,6 @@ const Signup = () => {
           placeholder="Your Password"
           autoComplete="current-password"
           fullWidth
-          autoFocus
           required
           InputProps={{
             endAdornment: (
