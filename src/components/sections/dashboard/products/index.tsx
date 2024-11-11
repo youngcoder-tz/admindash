@@ -27,12 +27,12 @@ const Products = () => {
   return (
     <Stack direction="column" gap={3.75} component={Paper} height={300}>
       <Typography variant="h6" fontWeight={400} fontFamily={fontFamily.workSans}>
-        Products
+        Programs & Projects
       </Typography>
 
       <Stack justifyContent="space-between">
         <Typography variant="caption" fontWeight={400}>
-          Products
+          Programs
         </Typography>
         <Typography variant="caption" fontWeight={400}>
           Price
