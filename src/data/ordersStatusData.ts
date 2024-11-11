@@ -4,10 +4,10 @@ import { formatNumber } from 'functions/formatNumber';
 export const ordersStatusData: GridRowsProp = [
   {
     id: '#1532',
-    client: { name: 'John Carter', email: 'hello@johncarter.com' },
+    client: { name: 'Jom Joam', email: 'hello@jomjoam.com' },
     date: new Date('Jan 30, 2024'),
     status: 'delivered',
-    country: 'United States',
+    country: 'Tanzania',
     total: formatNumber(1099.24),
   },
   {
@@ -15,7 +15,7 @@ export const ordersStatusData: GridRowsProp = [
     client: { name: 'Sophie Moore', email: 'contact@sophiemoore.com' },
     date: new Date('Jan 27, 2024'),
     status: 'canceled',
-    country: 'United Kingdom',
+    country: 'Kenya',
     total: formatNumber(5870.32),
   },
   {
@@ -44,10 +44,10 @@ export const ordersStatusData: GridRowsProp = [
   },
   {
     id: '#1527',
-    client: { name: 'Andy Smith', email: 'hello@andysmith.com' },
+    client: { name: 'Mwijaku Kiboma', email: 'hello@andysmith.com' },
     date: new Date('Jan 15, 2024'),
     status: 'pending',
-    country: 'United States',
+    country: 'Tanzania',
     total: formatNumber(2449.64),
   },
   {
@@ -95,7 +95,7 @@ export const ordersStatusData: GridRowsProp = [
     client: { name: 'Henry Joseph', email: 'contact@henryjoseph.com' },
     date: new Date('Dec 28, 2023'),
     status: 'delivered',
-    country: 'North Korea',
+    country: 'Uganda',
     total: formatNumber(5245.68),
   },
 ];

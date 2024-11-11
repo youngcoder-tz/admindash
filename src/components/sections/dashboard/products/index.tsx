@@ -9,14 +9,14 @@ import Product from './Product';
 const productsData = [
   {
     id: 1,
-    name: 'iPhone 14 Pro Max',
+    name: 'Global Social Programs',
     imageUrl: iPhone,
     inStock: 524,
     price: '1,099.00',
   },
   {
     id: 2,
-    name: 'Apple Watch S8',
+    name: 'On Time Programs',
     imageUrl: AWS8,
     inStock: 320,
     price: '799.00',

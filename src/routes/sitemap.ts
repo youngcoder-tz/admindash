@@ -82,7 +82,7 @@ const sitemap: MenuItem[] = [
   },
   {
     id: 'account-settings',
-    subheader: 'John Carter',
+    subheader: 'Jom Joam',
     path: '#!',
   },
 ];

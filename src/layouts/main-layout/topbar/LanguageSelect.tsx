@@ -30,9 +30,9 @@ const languages: Language[] = [
   },
   {
     id: 3,
-    code: 'ban',
-    lang: 'বাংলা',
-    flag: 'twemoji:flag-bangladesh',
+    code: 'sw',
+    lang: 'Kiswahili',
+    flag: 'twemoji:flag-tanzania',
   },
   {
     id: 4,

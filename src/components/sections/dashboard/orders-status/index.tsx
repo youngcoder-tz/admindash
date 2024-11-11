@@ -21,7 +21,7 @@ const OrdersStatus = () => {
     <Paper sx={{ px: 0 }}>
       <Stack px={3.5} spacing={1.5} alignItems="center" justifyContent="space-between">
         <Typography variant="h6" fontWeight={400} fontFamily={fontFamily.workSans}>
-          Orders Status
+          Donators Status
         </Typography>
         <Stack spacing={2} alignItems="center">
           <TextField

@@ -28,13 +28,13 @@ const Product = ({ data }: ProductInfoProps) => {
             {name}
           </Typography>
           <Typography variant="caption" color="text.secondary" fontWeight={500}>
-            {inStock} in stock
+            {inStock} pendling
           </Typography>
         </Stack>
       </Stack>
 
       <Typography variant="caption" fontWeight={400} fontFamily={fontFamily.workSans}>
-        $ {price}
+        TZS {price}
       </Typography>
     </Stack>
   );
